@@ -106,3 +106,8 @@ function keyboardInputHandler(e) {
     res.value = resultInput.substring(0, res.value.length - 1);
   }
 }
+// Sounds button
+
+document.querySelector('input[value="="]').addEventListener('click', function() {
+  new Audio('audio/pukane-11.mp3').play();
+})
